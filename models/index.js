@@ -13,4 +13,7 @@ var orderSchema = new Schema({
   address: String,
   method: String,
   creditCard: Number,
+  expiration: String
 })
+
+Order = mongoose.model('Order', orderSchema)

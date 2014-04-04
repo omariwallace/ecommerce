@@ -10,3 +10,9 @@ exports.index = function(req, res){
 exports.purchase = function(req, res){
   res.render('purchase')
 }
+
+exports.order = function(req, res){
+  var form_data = req.body
+
+  console.log(form_data)
+}

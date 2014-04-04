@@ -2,18 +2,18 @@
 
 {% block content %}
 <div class='col-xs-6'>
-  <form role="form" action="order" method="post">
+  <form role="form">
       <div class="form-group">
         <label for="inputName">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter name">
+        <input type="text" class="form-control" name="name" placeholder="Enter name">
       </div>
       <div class="form-group">
         <label for="inputAddress">Shipping Address:</label>
-        <input type="text" class="form-control" id="address" placeholder="Enter Address">
+        <input type="text" class="form-control" address="address" placeholder="Enter Address">
       </div>
       <div class="form-group">
-        <label for="inputAddress">Shipping Method:</label>
-        <select name="select" class='form-control'>
+        <label for="inputMethod">Shipping Method:</label>
+        <select name="method" class='form-control' id='method'>
           <option value="overnight">Overnight</option>
           <option value="2day">2 Day Air</option>
           <option value="standard">Standard</option>
@@ -22,15 +22,15 @@
     <div class="form-group row">
       <div class='col-xs-6'>
         <label for="inputAddress">Credit Card Number:</label>
-        <input type="text" class="form-control" id="ccard_no" placeholder="Credit Card Number">
+        <input type="text" class="form-control" name="ccard" placeholder="Credit Card Number">
       </div>
       <div class='col-xs-6'>
         <label for="inputAddress">Expiration:</label>
-        <input type="text" class="form-control" id="ccard_no" placeholder="MM/YYYY">
+        <input type="text" class="form-control" name="expire" placeholder="MM/YYYY">
       </div>
     </div>
     <div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" id="submit" class="btn btn-default">Submit</button>
     </div>
   </form>
   </div>
